@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%); 
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%); 
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: var(--Very-dark-desaturated-blue);
+    overflow: hidden;
+}
+h1, h2, h3, h4{
+    font-weight: 700;
+}
+
+.top-img{
+    position: absolute;
+    top: -75vh;
+    left: -25vw;
+}
+.bottom-img{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+.container{
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 1;
+}
+.top{
+    height: 8em;
+    width: 100%;
+    background: url('images/bg-pattern-card.svg');
+    border-radius: 20px 20px 0 0;
+}
+.bottom{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.dp-img{
+    border: 7px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    top: -3em;
+}
+.name{
+    position: relative;
+    top: -2em;
+}
+.age{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+.city{
+    color: var(--Dark-grayish-blue);
+    font-size: .9em;
+    margin-top: .3em;
+    position: relative;
+    top: -2.2em;
+}
+hr{
+    border: none;
+    border-top: .5px solid var(--Dark-gray);
+    margin-bottom: 1em;
+    width: 100%;
+    opacity: 0.3;
+}
+.statistics{
+    display: flex;
+    margin: 1em 0;
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.numbers{
+    font-size: .7em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.numbers p{
+    font-weight: 200;
+}
+@media screen and (max-width: 500px) {
+
+    body{
+        font-size: 18px;       
+    }
+    .container{
+        width: 80%;
+    }
+    .top{
+        height: 15vh;
+    }
+}
